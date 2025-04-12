@@ -6,6 +6,8 @@ import com.hmdp.mapper.UserMapper;
 import com.hmdp.service.IUserService;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * <p>
  * 服务实现类
@@ -17,4 +19,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
+    @Override
+    public void sendCode(String phone, HttpSession session) {
+
+    }
 }
